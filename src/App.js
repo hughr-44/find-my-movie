@@ -29,7 +29,7 @@ class App extends React.Component {
     console.log("searching for movies")  
     this.setState({rows: []})
 
-    for(var i=1; i<101; i++){
+    for(var i=1; i<21; i++){
 
     //console.log(searchTerm)
     const urlString = "https://api.themoviedb.org/3/discover/movie?api_key=fa53fe2bb3cc3e01ec7cefe7e16aa1a2&language=en-US&sort_by=popularity.desc&page=" + String(i) + "&with_genres=" + searchTerm
